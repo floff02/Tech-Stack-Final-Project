@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Student Profile</title>
+  <link rel="icon" type="image/x-icon" href="PSP Logo.png">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+  
+  <div class = "NavBar">
+    <div class = "PSPLogo">
+      <img src = "static/Assets/PSP Logo.png" width = "150px" height="100px">
+    </div>
+      <div class = "Buttons">
+        <button class ="Button" onclick = "document.location = 'index'">Home Page</button>
+        <button class ="Button" onclick = "document.location = 'employer'">Employers</button>
+        <button class ="Button" onclick = "document.location = 'index'">Login</button>
+      </div>
+  
+  </div>
+  <div class = "main">
+    <div class = "row">
+        <div class = "Stcolumn" id = "column">
+        <fieldset class = "StudentInput">
+          <legend>Student, please enter your details below</legend>
+          <form action = "/student" method = "POST">
+
+            <label for = "ForeName">Forename:</label>
+            <input type = "name" name = "ForeName" name = "ForeName" required minlength = "2" maxlength = "20" size = "20">
+
+            <label for = "SurName">Surname:</label>
+            <input type = "name" name = "SurName" name = "SurName" required minlength = "2" maxlength = "20" size = "20">
+
+            <label for = "Password">Password:</label>
+            <input type = "password" name = "Password" name = "Password" required minlength = "6" maxlength = "20" size = "20">
+
+            <label for = "Email">Email Address:</label>
+            <input type = "email" name= "Email" name= "Email" required minlength = "3" maxlength = "50" size = "20">
+
+            <label for = "career">Desired Career:</label>
+            <input type = "text" name= "Career" name= "career" required minlength = "3" maxlength = "25" size = "20">
+  
+            <h2 for = "Qemployed">Are you Employed in any manner?</h2>
+
+            <label for = "Employed"> Yes/No</label> 
+            <input type = "text" name = "Employed" name = "emp_status" required> 
+            
+            
+          
+            <h2 for = "WorkExp">Do you have any work experience in your desired career within the past 12 months?</h2>
+
+            <label for = "Experience"> Yes/No</label> 
+            <input type = "text" name = "Experience" name = "exp_status" required> 
+          
+            <button type="submit" class="FormButton">Register</button>
+          </form>
+          
+        </fieldset>
+        </div>
+    </div>
+  </div>
+</body>

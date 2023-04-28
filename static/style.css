@@ -1,0 +1,178 @@
+*html, body {
+    height: 100%;
+    width: 80%;
+    margin: 0px !important;
+    margin-left: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .NavBar {
+    
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-around;
+    background-color: #9ABED6;
+  }
+  
+  
+  .PSPLogo {
+    display: flex;
+  
+  }
+  .PSPLogopng {
+      width: 150px;
+  }
+  .Button {
+    background-color: #9CD4E6;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    
+   
+    
+  }
+  .Button:hover {
+    background-color: #99C6F2;
+  }
+  .Buttons {
+    padding-top: 2%;
+  }
+  
+  
+  .main{
+    display: flex;
+    background-color: #B7E7EE;
+    padding-top: 5%;
+  }
+  .row{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%
+  }
+  .column{
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+  }
+  @media only screen and (max-width: 700px) {
+    .column {
+      flex-direction: row;
+      width: 90%;
+      padding-left: 5%;
+    }
+    .EmpColumn {
+    width: 90%;
+    flex-direction: row;
+    padding-left: 5%;
+  }
+  }
+  label{
+    padding-top: 3%;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .employer {
+    padding-top: 7%;
+    text-align: center;
+  }
+  
+  .column h1{
+    font-size: 3em;
+  }
+  img {
+    border-radius: 15px;
+  }
+  .AccLogin {
+    background-color: #9CD4E6;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 2%
+  }
+  .AccLogin:hover {
+    background-color: #99C6F2;
+  }
+  .Explain {
+    width: 80%;
+    margin-left: 8%;
+  }
+  .Contact {
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 15%;
+  }
+  .Email {
+    background-color: #9CD4E6;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 2%
+  }
+  .Email:Hover {
+    background-color: #99C6F2;
+  }
+  .Stcolumn{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .EmpSearch {
+    width: 80%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+  }
+  .EmpColumn {
+    width: 33.3%;
+    flex-direction: column;
+  }
+  .Empmain {
+    width: 100%;
+    text-align: center;
+    background-color: #B7E7EE;
+  }
+  h1 {
+    margin: 0px;
+    padding-top: 3%;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .ProfilePrev {
+    max-height: 550px;
+    min-height: 550px;
+  }
+  @media only screen and (max-width: 700px) {
+    .EmpColumn {
+    width: 90%;
+    flex-direction: row;
+    padding-left: 5%;
+  }
+  }
+  @media screen and (max-width: 650px) {
+    .Button {
+      display: block; 
+      width: 100%;
+      margin-right: 5%;
+      overflow: hidden; 
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .PSPLogopng {
+      width: 100px;
+    }
+  }

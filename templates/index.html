@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PSP</title>
+  <link rel="icon" type="image/x-icon" href="PSP Logo.png">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+  
+  <div class = "NavBar">
+    <div class = "PSPLogo">
+      <img class = "PSPLogopng" src = "static/Assets/PSP Logo.png"height="100px">
+    </div>
+      <div class = "Buttons">
+        <button class = "Button" onclick = "document.location = 'student'">Students</button>
+        <button class = "Button" onclick = "document.location = 'employer'">Employers</button>
+        <button class = "Button" onclick = "document.location = 'index'">Login</button>
+      </div>
+  
+  </div>
+  <div class = "main">
+    <div class = "row">
+        <div class = "column" id = "column">
+          <h1>Find Your<br>Career Here  </h1>
+          <div class = "input">
+            <label for="name">Email:</label>
+
+            <input type="text" id="name" name="name" required minlength="4" maxlength="" size="20">
+            <label for="stpassword">Password:</label>
+
+            <input type="password" id="stpassword" name="stpassword" required minlength="8"  size="20">
+
+            
+
+          </div>
+          <button class = "AccLogin" href = "">Student Login</button>
+          <img class = "employer" src = "static/Assets/employer.png" width = "95%" height = "250px">
+          <h1>Find Your<br>Next Employee</h1>
+          <div class = "input">
+            <label for="name">Email:</label>
+
+            <input type="text" id="name" name="name" required minlength="4" maxlength="" size="20">
+            <label for="EmpPassword">Password:</label>
+
+            <input type="password" id="EmpPassword" name="EmpPassword" required minlength="8"  size="20">
+
+            
+
+          </div>
+          <button class = "AccLogin" href = "">Business Login</button>
+          
+        </div>
+        <div class = "column" id = "column">
+          <img class = "student" src = "static/Assets/Example Student.jpg" width = 95% height = 250px>
+          <fieldset class = "Explain">
+            <legend>How Does It Work</legend>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget massa id libero malesuada tempor et eu erat. Morbi eget ipsum non nisl suscipit auctor. Maecenas sollicitudin rhoncus mi quis pulvinar. Donec facilisis purus eu dapibus dictum. Etiam vehicula rhoncus vehicula. Sed vitae felis a mi facilisis imperdiet nec eget justo. Vivamus vitae volutpat risus, molestie pellentesque enim.</p>
+          </fieldset>
+
+          <fieldset class = "Contact">
+            <legend>Contact Us</legend>
+            <p>Please Contact us on any platforms listed below between the standard business practice hours BST</p>
+            <button class = "Email" href = "mailto: abc@example.com""">Email</button>
+            <p>Or Contacts us at our office number listed below <br> 07959854385</p>
+          </fieldset>
+        </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

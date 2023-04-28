@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Employees</title>
+  <link rel="icon" type="image/x-icon" href="PSP Logo.png">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+  
+  <div class = "NavBar">
+    <div class = "PSPLogo">
+      <img src = "static/Assets/PSP Logo.png" width = "150px" height="100px">
+    </div>
+      <div class = "Buttons">
+        <button class ="Button" onclick = "document.location = 'student'">Students</button>
+        <button class ="Button" onclick = "document.location = 'index'">Home Page</button>
+        <button class ="Button" onclick = "document.location = 'index'">Login</button>
+      </div>
+    </div>
+    <div class = "Empmain">
+      <div class = "EmpSearch">
+        <h1>Student Profiles</h1>
+        <label for = "Search">Search:</label>
+        <input type = "search" id = "Search" name = "Search" required minlength = "5" maxlength = "20" size = "20">
+      </div>
+    <fieldset>
+      <div class = "row">
+        {% for student in students %}
+        <fieldset class = "ProfilePrev">
+          <img class = "StudentIcon" src = "static/Assets/male student icon.png" width = "100%" height = "300px">
+          <h2>{{ student[0] + student[1] }}</h2>
+          <p>Career Path: {{ student[4] }}<br><br>Currently Employed: {{ student[5] }}<br><br>Work Experience within the field during the past 12 months: {{ student[6] }}<br></p>
+          <button class = "Email"><a href = "mailto: {{ student[3] }}">Email Me</a></button>
+        </fieldset>
+        {% endfor %}
+      </div>
+    </fieldset>
+  </div>
+</body>
